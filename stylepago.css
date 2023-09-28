@@ -1,0 +1,100 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+.contenedor {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.contenedor .sub-contenedor {
+    width: 600px;
+    border-radius: 10px;
+    background-color: blue;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.contenedor .sub-contenedor .contenido {
+    background-color: blue;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex: auto;
+}
+
+.contenedor .sub-contenedor .contenido .icon{
+    margin-right: 10px;
+}
+
+.contenedor .sub-contenedor .contenido .mensaje .title {
+
+    font-weight: bolder;
+}
+
+.contenedor .sub-contenedor .accions {
+    background-color: blue;
+    padding: 10px 0;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.contenedor .sub-contenedor .accions button {
+    border: 0;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 120px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contenedor .sub-contenedor .accions .descargar {
+    background-color: white;
+    color: blue;
+}
+
+.contenedor .sub-contenedor .accions .descargar:hover {
+    background-color: aqua;
+    color: white;
+}
+
+.contenedor .sub-contenedor .accions .volver{
+    background-color: white
+}
+
+.contenedor .sub-contenedor .accions .volver:hover {
+    background-color: white;
+    color: aqua;
+}
+
+@media (max-width:700px) {
+    .contenedor .sub-contenedor{
+        width: 70%;
+    }
+    
+    .contenedor .sub-contenedor .accions{
+        flex-direction: column;
+    }
+
+    .contenedor .sub-contenedor .contenido .title{
+        color: white;
+    }
+
+    .contenedor {
+        background-color: black;
+    }
+    .contenedor .sub-contenedor{
+        box-shadow: 0 0 20px white;
+    }
+}
